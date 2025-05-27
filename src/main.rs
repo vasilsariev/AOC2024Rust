@@ -1,4 +1,5 @@
 mod day01;
+mod day02;
 
 fn main() {
     let day_number = std::env::args()
@@ -7,6 +8,7 @@ fn main() {
 
     let (part1, part2) = match day_number.as_str() {
         "01" => day01::solve(),
+        "02" => day02::solve(),
         _ => panic!("Day not implemented!"),
     };
 
